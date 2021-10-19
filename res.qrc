@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>satisrapor.xml</file>
+        <file>faturarapor.xml</file>
+        <file>caridokum.xml</file>
+        <file>sirsatisrapor.xml</file>
+    </qresource>
+</RCC>

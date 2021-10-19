@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BiskuviSatis</class>
+ <widget class="QMainWindow" name="BiskuviSatis">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>650</width>
+    <height>666</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Bisküvi Satisi</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Müsteri Secin:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="UtAraTxt">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>60</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ürün Türü Ara:</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="UtLw">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>90</y>
+      <width>191</width>
+      <height>192</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="ULw">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>90</y>
+      <width>191</width>
+      <height>192</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>60</y>
+      <width>61</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ürün Secin:</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>60</y>
+      <width>221</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Ürün Bilgileri</string>
+    </property>
+    <widget class="QPushButton" name="ekleButon">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>160</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Ekle</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>120</y>
+       <width>84</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label_7">
+        <property name="text">
+         <string>Adet:</string>
+        </property>
+        <property name="buddy">
+         <cstring>AdetSb</cstring>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSpinBox" name="AdetSb">
+        <property name="minimum">
+         <number>1</number>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>90</y>
+       <width>116</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>Birim Fiyatı:</string>
+        </property>
+        <property name="buddy">
+         <cstring>BFiyatDsb</cstring>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QDoubleSpinBox" name="BFiyatDsb"/>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>60</y>
+       <width>191</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>Ürün Adi:</string>
+        </property>
+        <property name="buddy">
+         <cstring>UAdBilgiTxt</cstring>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="UAdBilgiTxt"/>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>193</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Ürün Türü:</string>
+        </property>
+        <property name="buddy">
+         <cstring>UTBilgiTxt</cstring>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="UTBilgiTxt"/>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>290</y>
+      <width>501</width>
+      <height>311</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="silButon">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>310</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ürün Sil</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="TamamButon">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>530</y>
+      <width>101</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>İşlem Tamamla</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>20</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Müsteri Borcu:</string>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="mBorcDsb">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>11</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+    <property name="buttonSymbols">
+     <enum>QAbstractSpinBox::NoButtons</enum>
+    </property>
+    <property name="minimum">
+     <double>-99999.990000000005239</double>
+    </property>
+    <property name="maximum">
+     <double>99999.990000000005239</double>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="topTutarDsb">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>481</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+    <property name="buttonSymbols">
+     <enum>QAbstractSpinBox::NoButtons</enum>
+    </property>
+    <property name="maximum">
+     <double>99999.990000000005239</double>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>460</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Toplam Tutar</string>
+    </property>
+   </widget>
+   <widget class="QDateEdit" name="dateEdit">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>10</y>
+      <width>110</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+    <property name="buttonSymbols">
+     <enum>QAbstractSpinBox::NoButtons</enum>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>221</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <stylestrategy>PreferDefault</stylestrategy>
+     </font>
+    </property>
+    <property name="maxVisibleItems">
+     <number>20</number>
+    </property>
+   </widget>
+   <zorder>comboBox</zorder>
+   <zorder>label</zorder>
+   <zorder>UtAraTxt</zorder>
+   <zorder>label_2</zorder>
+   <zorder>UtLw</zorder>
+   <zorder>ULw</zorder>
+   <zorder>label_3</zorder>
+   <zorder>groupBox</zorder>
+   <zorder>tableWidget</zorder>
+   <zorder>silButon</zorder>
+   <zorder>TamamButon</zorder>
+   <zorder>label_8</zorder>
+   <zorder>mBorcDsb</zorder>
+   <zorder>topTutarDsb</zorder>
+   <zorder>label_9</zorder>
+   <zorder>dateEdit</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>650</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuSat_lemleri">
+    <property name="title">
+     <string>Satış İşlemleri</string>
+    </property>
+    <addaction name="actionBisk_vi_Sati"/>
+    <addaction name="actionBisk_vi_Sat"/>
+   </widget>
+   <widget class="QMenu" name="menu_r_n_lemleri">
+    <property name="title">
+     <string>Ürün İşlemleri</string>
+    </property>
+    <addaction name="action_r_n_G_ncelleme"/>
+    <addaction name="action_r_n_Ekleme"/>
+    <addaction name="action_r_n_Ekleme_S_al"/>
+    <addaction name="action_r_n_Ekleme_S_r_al"/>
+    <addaction name="action_r_n_T_r_Ekleme"/>
+   </widget>
+   <widget class="QMenu" name="menu_deme_lemleri">
+    <property name="title">
+     <string>Ödeme İşlemleri</string>
+    </property>
+    <addaction name="action_deme_lemleri"/>
+   </widget>
+   <widget class="QMenu" name="menuM_teri_lemleri">
+    <property name="title">
+     <string>Müşteri İşlemleri</string>
+    </property>
+    <addaction name="actionM_teri_Ekleme"/>
+   </widget>
+   <addaction name="menuSat_lemleri"/>
+   <addaction name="menu_r_n_lemleri"/>
+   <addaction name="menu_deme_lemleri"/>
+   <addaction name="menuM_teri_lemleri"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionBisk_vi_Sati">
+   <property name="text">
+    <string>Sırçalı Satış</string>
+   </property>
+  </action>
+  <action name="actionBisk_vi_Sat">
+   <property name="text">
+    <string>Bisküvi Satış</string>
+   </property>
+  </action>
+  <action name="action_r_n_G_ncelleme">
+   <property name="text">
+    <string>Ürün Güncelleme Bisküvi</string>
+   </property>
+  </action>
+  <action name="action_r_n_Ekleme">
+   <property name="text">
+    <string>Ürün Ekleme Bisküvi</string>
+   </property>
+  </action>
+  <action name="action_r_n_Ekleme_S_al">
+   <property name="text">
+    <string>Ürün Güncelleme Sırçalı</string>
+   </property>
+  </action>
+  <action name="action_r_n_Ekleme_S_r_al">
+   <property name="text">
+    <string>Ürün Ekleme Sırçalı</string>
+   </property>
+  </action>
+  <action name="action_deme_lemleri">
+   <property name="text">
+    <string>Ödeme İşlemleri</string>
+   </property>
+  </action>
+  <action name="action_r_n_T_r_Ekleme">
+   <property name="text">
+    <string>Ürün Türü Ekleme</string>
+   </property>
+  </action>
+  <action name="actionM_teri_Ekleme">
+   <property name="text">
+    <string>Müşteri Ekleme</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
